@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="materialize/css/materialize.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div id="content-placeholder" style="width: 100%;position: absolute;z-index: 9999; position: fixed;">
+        <div class="preloader" style="text-align: center; height: 100vh; background-color: white;"> 
+            <img src="image/Skateboarding.gif" alt="">
+        </div>
+    </div>
+
+    <nav class="white center">
+        <span><i class="fa fa-cutlery" aria-hidden="true" style="color: rgba(0, 0, 255, 0.548); font-size: 30px;"></i></span>
+    </nav>
+    
+    
+        
+            <nav class="white">
+                <div class="container">
+            <ul class="hide-on-small-only" style="margin-left: 28%;">
+                <li><a href="" style="color: black;">Home</a></li>
+                <li><a href="" style="color: black;">About Us</a></li>
+                <li><a href="" style="color: black;">Product</a></li>
+                <li><a href="" style="color: black;">Contact Us</a></li>
+            </ul>
+             
+            <ul id="slide-out" class="sidenav">
+                <li>
+                   <div class="user-view">
+                       <div class="background">
+                           
+                       </div>
+                       <a href="#user"><img class="circle" src="image/car 1.webp" alt=""></a>
+                       <a href="#name"><span class="white-text name"> Alvin Kelvin</span></a>
+                       <a href="#email"> <span class="white-text email"> alvinkelvin668@gmail.com</span></a>
+                   </div>
+                </li>
+
+                <li><a href="">Home</a></li>
+                <li><a href="">About Us</a></li>
+                <li><a href="">Product</a></li>
+                <li><a href="">Contact Us</a></li>
+           </ul>
+           <a href="#" data-target="slide-out" class="sidenav-trigger" style="color: black;"><i class="material-icons white"> <span><i class="fa fa-bars" aria-hidden="true"></i></span></i></a>
+           
+             
+           </div>
+        </nav>
+    
+
+    <div class="center">
+        <h3 class="animate__animated animate__heartBeat animate__infinite	">Sustainably crafted goods to elevate your everyday.
+            
+        </h3>
+    </div>
+
+    <div class="container">
+          <div class="row">
+            
+            <div class="col l6 m12">
+                <img src="image/fruit img 3.jpg" alt="" width="100%">
+                <div class="card">
+                    <p>Glass ware</p>
+                </div>
+            </div>
+            <div class="col l6 m12 s12">
+                <img src="image/fruit img 4.jpg" alt="" width="100%">
+                <div class="card">
+                    <p>Textile</p>
+                </div>
+            </div>
+          </div>
+    </div>
+
+    <div class="container">
+        <div class="row">
+          
+          <div class="col l4 m12 s12">
+              <img src="image/fruit img 3.jpg" alt="" width="100%">
+              <div class="card">
+                  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Perferendis, illum.</p>
+              </div>
+          </div>
+          <div class="col l4 m12 s12">
+              <img src="image/fruit img 4.jpg" alt="" width="100%">
+              <div class="card">
+                  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique, rem!</p>
+              </div>
+          </div>
+          <div class="col l4 m12 s12">
+            <img src="image/fruit img 1.jpeg" alt="" width="100%">
+            <div class="card">
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore, itaque?</p>
+            </div>
+          </div>
+        </div>
+  </div>
+
+        <script src="materialize/js/jQuery.js"></script>
+        <script src="materialize/js/materialize.js"></script>
+
+  <script>
+    window.addEventListener('load',function(){
+        setTimeout(function(){document.querySelector('.preloader').style.display ='none';
+            document.getElementById('content-placeholder').style.display = 'block';
+        },2000)
+    })
+</script>
+
+     <script>
+         $(document).ready(function(){
+            $('.sidenav').sidenav();
+        });
+     </script>
+
+</body>
+</html>
